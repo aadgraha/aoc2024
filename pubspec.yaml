@@ -1,0 +1,5 @@
+name: "aoc"
+environment:
+  sdk: ">=3.0.0"
+dependencies:
+  collection: ^1.19.1
