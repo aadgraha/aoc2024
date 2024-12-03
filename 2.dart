@@ -1,6 +1,6 @@
 import 'dart:io';
 
-void main() {
+main() {
   final file_path = Directory.current.path + '/2_input.txt';
   final file = File(file_path);
   final val = <bool>[];
@@ -18,7 +18,7 @@ void main() {
   print(val.where((e) => e == true).length);
 }
 
-void _validateSafe(List<int> e, void Function(bool) onEnd) {
+_validateSafe(List<int> e, void Function(bool) onEnd) {
   final dc = <int>[];
   for (var i = 0; i < e.length; i++) {
     if (i != e.length - 1) {
